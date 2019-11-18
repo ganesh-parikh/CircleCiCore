@@ -28,7 +28,7 @@ jobs:
           
       - run:
           name: "Test the executable"
-          command: .\bin\Release\netcoreapp3.0\publish\CircleCiCore.exe
+          command: .\CircleCiCore\bin\Release\netcoreapp3.0\publish\CircleCiCore.exe
           
       - run:
           name: Creating Dummy Artifacts
@@ -44,4 +44,4 @@ jobs:
       - store_artifacts:
           path: /tmp/artifacts
       - store_artifacts:
-          path: .\bin\Release\netcoreapp3.0\publish\CircleCiCore.exe
+          path: .\CircleCiCore\bin\Release\netcoreapp3.0\publish\CircleCiCore.exe

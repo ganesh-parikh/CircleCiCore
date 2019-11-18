@@ -9,8 +9,7 @@ jobs:
       name: win/vs2019
       shell: powershell.exe
       
-      working_directory: /tmp
-      
+    working_directory: /tmp
     steps:
       - checkout
       # - restore_cache:

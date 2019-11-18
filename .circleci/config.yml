@@ -27,4 +27,5 @@ jobs:
       # - run:
           # name: "Test the executable"
           # command: .\bin\Release\netcoreapp2.1\win10-x64\publish\CircleCiCore.exe
-    
+     - store_artifacts:
+          path: .\bin\Release\netcoreapp2.1\win10-x64\publish\CircleCiCore.exe

@@ -27,7 +27,7 @@ jobs:
           command: dotnet.exe publish -c Release -r win10-x64
       - run:
           name: "Test the executable"
-          command: .\bin\Release\netcoreapp2.1\win10-x64\publish\CircleCiCore.exe
+          command: .\bin\Release\netcoreapp3.0\CircleCiCore.exe
           
       - run:
           name: Creating Dummy Artifacts
@@ -42,5 +42,5 @@ jobs:
 
       - store_artifacts:
           path: /tmp/artifacts
-      # - store_artifacts:
-          # path: .\bin\Release\netcoreapp2.1\win10-x64\publish\CircleCiCore.exe
+      - store_artifacts:
+          path: .\bin\Release\netcoreapp3.0\CircleCiCore.exe

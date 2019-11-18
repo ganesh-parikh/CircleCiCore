@@ -27,7 +27,8 @@ jobs:
       # - run:
           # name: "Test the executable"
           # command: .\bin\Release\netcoreapp2.1\win10-x64\publish\CircleCiCore.exe
-      name: Creating Dummy Artifacts
+      - run:
+          name: Creating Dummy Artifacts
           command: |
             echo "my artifact file" > /tmp/artifact-1;
             mkdir /tmp/artifacts;
